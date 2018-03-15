@@ -72,6 +72,9 @@ ul li:hover a {
 	letter-spacing: 4px;
 }
 /* Hero Section */
+
+
+
 .hero {
 	background-color: #B3B3B3;
 	padding-top: 1%;
@@ -83,6 +86,7 @@ ul li:hover a {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
 .hero_logo{
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -92,6 +96,7 @@ ul li:hover a {
 	background-position: top;
 	background-size: 50%;
 	background-repeat: no-repeat;
+	z-index: 1;
 }
 .light {
 	font-weight: bold;
@@ -191,6 +196,32 @@ ul li:hover a {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
+}
+
+.footer_sep {
+	background-color: #2D9AB7;
+	background-image: url(../images/plage_2.jpg);
+	height: 400px;
+	background-attachment: fixed;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.actus {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 35px;
+	display: inline-block;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+}
+
+.actus-column {
+	width: 50%;
+	text-align: center;
+	padding-top: 30px;
+	float: left;
 }
 /* More info */
 footer {
