@@ -22,8 +22,8 @@ body {
 header {
 	width: 100%;
 	height: 5%;
-	background-color: #52bad5;
-	border-bottom: 1px solid #2C9AB7;
+	background-color: #8012F8;
+	border-bottom: 1px solid #EC008C;
 }
 .logo {
 	color: #fff;
@@ -157,7 +157,7 @@ ul li:hover a {
 	margin-right: 5px;
 	margin-bottom: 5px;
 	margin-left: 5px;
-	color: #52BAD5;
+	color: #8012F8;
 }
 .gallery .thumbnail p {
 	margin-top: 0px;
@@ -198,35 +198,87 @@ ul li:hover a {
 	margin-left: 0px;
 }
 
-.footer_sep {
-	background-color: #2D9AB7;
-	background-image: url(../images/plage_2.jpg);
-	height: 400px;
-	background-attachment: fixed;
-	background-position: top;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
+/* Actus */
 .actus {
 	padding-left: 25px;
 	padding-right: 25px;
-	padding-top: 35px;
+	padding-top: 15px;
 	display: inline-block;
 	background-color: #FFFFFF;
 	margin-top: 0px;
 }
 
 .actus-column {
-	width: 50%;
-	text-align: center;
-	padding-top: 30px;
+	width: 29%;
+	text-align: justify;
+	font-weight: lighter;
+	line-height: 25px;
 	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #747474;
 }
+.actus-column h3{
+	color: #474747;
+	text-align: left;
+	margin-bottom: -5px;
+}
+.actu_date{
+	text-align: right;
+	font-size: 10pt;
+	margin: 0;
+	font-weight: bold;
+} 
+.actu_text{
+	margin-top: -5px;
+	font-weight: bold;
+}
+.actu_rm{
+	color: #8116F8;
+	font-size: 12pt;
+	text-align: right;
+	margin-top: -20px;
+}
+
+.footer_sep {
+	background-color: #2D9AB7;
+	background-image: url(../images/cso_1.jpg);
+	height: 400px;
+	background-attachment: fixed;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.footer_sep .parallax {
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 100px;
+	padding-top: 110px;
+	letter-spacing: 2px;
+	margin-top: 0px;
+}
+
+.footer_sep .parallax_description {
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 100px;
+	width: 30%;
+	float: left;
+	font-weight: lighter;
+	line-height: 23px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
 /* More info */
 footer {
-	background-color: #FFFFFF;
+	background-color: #B3B3B3;
 	padding-bottom: 35px;
+	width: 100%;
+	margin-bottom: -5px;
+	
 }
 .footer_column {
 	width: 50%;
@@ -235,12 +287,12 @@ footer {
 	float: left;
 }
 footer .footer_column h3 {
-	color: #B3B3B3;
+	color: #242424;
 	text-align: center;
 }
 footer .footer_column p {
-	color: #717070;
-	background-color: #FFFFFF;
+	color: #363636;
+	font-weight: bolder;
 }
 .cards {
 	width: 100%;
@@ -284,14 +336,14 @@ footer .footer_column p {
 }
 .copyright {
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: #717070;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	font-weight: lighter;
 	letter-spacing: 2px;
-	border-top-width: 2px;
+	border-top-width: 0px;
 }
 .footer_banner {
 	background-color: #B3B3B3;
@@ -315,8 +367,19 @@ footer {
 	text-align: center;
 	margin-top: 13px;
 	margin-right: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 13px;
 	margin-left: 0px;
+}
+.hero_logo{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-image: url("../images/logo4_v2s.png");
+	height: 600px;
+	background-attachment: scroll;
+	background-position: top;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	z-index: 1;
 }
 .container header nav {
 	margin-top: 0px;
@@ -338,6 +401,14 @@ nav ul li {
 	text-align: center;
 }
 .text_column {
+	width: 100%;
+	text-align: justify;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.actus-column {
 	width: 100%;
 	text-align: justify;
 	padding-top: 0px;
@@ -378,9 +449,38 @@ nav ul li {
 	float: none;
 	text-align: center;
 }
+	
+.footer_sep .parallax {
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 40%;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 100%;
+	font-size: 18px;
+}
+.footer_sep .parallax_description {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 90%;
+	margin-top: 25px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 12px;
+	float: none;
+	text-align: center;
+}
 .banner {
 	background-color: #2D9AB7;
-	background-image: none;
+}
+.footer_sep {
+	background-color: #2D9AB7;
 }
 .tagline {
 	margin-top: 20px;
@@ -405,6 +505,7 @@ nav ul li {
 	margin-left: 0px;
 	color: #043745;
 }
+
 .container header nav {
 	margin-top: 0px;
 	margin-right: 0px;
@@ -433,6 +534,14 @@ nav ul li {
 .text_column {
 	width: 100%;
 	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.actus-column {
+	width: 100%;
+	text-align: justify;
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
@@ -471,6 +580,32 @@ nav ul li {
 	width: 100%;
 	text-align: center;
 }
+.footer_sep .parallax {
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 40%;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 100%;
+	font-size: 18px;
+}
+.footer_sep .parallax_description {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 30%;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	float: none;
+	width: 100%;
+	text-align: center;
+}
 .thumbnail {
 	width: 50%;
 }
@@ -496,6 +631,10 @@ nav ul li {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+.footer_sep {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 .footer_column {
 	width: 100%;
 }
@@ -506,6 +645,7 @@ nav ul li {
 .text_column {
 	width: 100%;
 }
+
 .thumbnail {
 	width: 50%;
 }
