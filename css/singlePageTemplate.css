@@ -35,6 +35,9 @@ header {
 	margin-left: 25px;
 	letter-spacing: 4px;
 }
+.page-scroll{
+  font-weight: bolder;
+}
 nav {
 	float: right;
 	width: 50%;
@@ -358,6 +361,63 @@ footer {
 }
 .hidden {
 	display: none;
+}
+
+/* Tarifs */
+.hero-tarifs {
+	background-color: #B3B3B3;
+	padding-top: 1%;
+	padding-bottom: 30%;
+	background-image: url(../images/plage_5.jpg);
+	height: 400px;
+	background-attachment: fixed;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.tarif-section {
+	padding-left: 25px;
+  padding-right: 0px;
+	padding-top: 35px;
+  padding-bottom: 35px;
+	display: inline-block;
+  width: 98.3%;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+}
+.tarif-section p{
+  font-weight: bold;
+}
+.footer_sep-tarifs {
+	background-color: #2D9AB7;
+	background-image: url(../images/plage_2.jpg);
+	height: 400px;
+	background-attachment: fixed;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.footer_sep-tarifs .parallax {
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 100px;
+	padding-top: 110px;
+	letter-spacing: 2px;
+	margin-top: 0px;
+}
+
+.footer_sep-tarifs .parallax_description {
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 100px;
+	width: 30%;
+	float: left;
+	font-weight: lighter;
+	line-height: 23px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
 }
 
 /* Mobile */

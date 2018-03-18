@@ -9,14 +9,79 @@
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
 <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+<script>
+// handle links with @href started with '#' only
+$(document).on('click', 'a[href^="#"]', function(e) {
+    // target element id
+    var id = $(this).attr('href');
+
+    // target element
+    var $id = $(id);
+    if ($id.length === 0) {
+        return;
+    }
+
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+
+    // top position relative to the document
+    var pos = $id.offset().top;
+
+    // animated top scrolling
+    $('body, html').animate({scrollTop: pos});
+});
+</script>
+<script>
+$(document).ready(function(){
+
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+});
+</script>
 </head>
 <body>
+  <a href="#" class="scrollToTop"></a>
+  <style>
+    .scrollToTop{
+        width:10px; 
+        height:30px;
+        padding: 15px;
+        text-align:center; 
+        background-color: #EC008C;
+        font-weight: bold;
+        color: #444;
+        text-decoration: none;
+        position:fixed;
+        bottom: 10px;
+        right:25px;
+        display:none;
+        background: url('images/up-arrow.png') no-repeat 0px 20px;
+        background-size: contain;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+</style>
 <!-- Main Container -->
 <div class="container"> 
   <!-- Navigation -->
@@ -25,18 +90,17 @@
     </a>
     <nav>
       <ul>
-		<li><a href="#hero">A PROPOS</a></li>
-		<li><a href="actus">ACTUALITÉS</a></li>
-		<li><a href="#about">TARIFS</a></li>
+		<li><a href="#about">A PROPOS</a></li>
+		<li><a href="#actus" class="page-scroll">ACTUALITÉS</a></li>
+		<li><a href="tarifs.html">TARIFS</a></li>
 		<li> <a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
   <!-- Hero Section -->
   <section class="hero" id="hero">
-	  
 	<p class="hero_logo"></p>
-	  
+	 
 	
 	  
   </section>
@@ -76,7 +140,7 @@
     <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
   </section>
 	
-	<section class="actus">
+	<section class="actus" id="actus">
 		<h2>Actus...</h2>
 		<article class="actus-column">
 			<h3>Actu 1</h3>
@@ -111,7 +175,7 @@
   </section>
   <!-- More Info Section -->
   <footer>
-    <article class="footer_column">
+    <article class="footer_column" id="contact">
 		<h3>NOUS CONTACTER</h3>
 		<img src="images/logo4_v2.png" alt="" width="500" height="300" class="cards"/>
 		<h4>- Centre Équestre de Sauveterre -</h4>
