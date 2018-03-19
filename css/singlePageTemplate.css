@@ -65,9 +65,17 @@ nav ul li {
 ul li a {
 	color: #FFFFFF;
 	text-decoration: none;
+	padding-top: 50%;
+	padding-bottom: 15px;
+	padding-right: 12px;
+	padding-left: 12px;
+	margin-left: -12px;
+	margin-right: -12px;
+	transition: all linear 0.2s;
 }
 ul li:hover a {
-	color: #2C9AB7;
+	background-color: #EC008C;
+	transition: all linear 0.2s;
 }
 .hero_header {
 	color: #FFFFFF;
@@ -774,10 +782,21 @@ nav ul li {
 }
 
 /* Small Desktops */
-@media (min-width: 768px) and (max-width: 1096px) {
+@media (min-width: 768px) and (max-width: 1174px) {
 .text_column {
 	width: 100%;
 }
+.container header nav{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	overflow: auto;
+}
+	.logo{
+	display: none;
+	}
 
 .thumbnail {
 	width: 50%;
