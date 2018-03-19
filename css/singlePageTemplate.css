@@ -10,6 +10,10 @@ body {
 	font-style: normal;
 	font-weight: 200;
 }
+hidden{
+	visibility: hidden;
+}
+
 /* Container */
 .container {
 	width: 90%;
@@ -243,7 +247,7 @@ ul li:hover a {
 	margin-top: -20px;
 }
 
-.footer_sep {
+.parallax2 {
 	background-color: #2D9AB7;
 	background-image: url(../images/cso_1.jpg);
 	height: 400px;
@@ -252,7 +256,7 @@ ul li:hover a {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.footer_sep .parallax {
+.parallax2 .parallax {
 	color: #FFFFFF;
 	text-align: left;
 	padding-left: 100px;
@@ -261,12 +265,81 @@ ul li:hover a {
 	margin-top: 0px;
 }
 
-.footer_sep .parallax_description {
+.parallax2 .parallax_description {
 	color: #FFFFFF;
 	text-align: left;
 	padding-left: 100px;
 	width: 30%;
 	float: left;
+	font-weight: lighter;
+	line-height: 23px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+/* More infos */
+.moreinfo {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 15px;
+	display: inline-block;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+}
+
+.moreinfo-column {
+	width: 29%;
+	text-align: justify;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #747474;
+}
+.moreinfo-column h3{
+	color: #474747;
+	text-align: left;
+	margin-bottom: -5px;
+}
+ 
+.moreinfo_text{
+	margin-top: -5px;
+	font-weight: bold;
+}
+.moreinfo_rm{
+	color: #8116F8;
+	font-size: 12pt;
+	text-align: right;
+	margin-top: -20px;
+}
+
+.footer_sep {
+	background-color: #2D9AB7;
+	background-image: url(../images/plage_2.jpg);
+	height: 400px;
+	background-attachment: fixed;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.footer_sep .parallax {
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 100px;
+	padding-top: 110px;
+	letter-spacing: 2px;
+	margin-top: 0px;
+}
+
+.footer_sep .parallax_description {
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 100px;
+	width: 30%;
+	float: right;
 	font-weight: lighter;
 	line-height: 23px;
 	margin-top: 0px;

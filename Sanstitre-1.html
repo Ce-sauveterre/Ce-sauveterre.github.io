@@ -39,6 +39,9 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 });
 </script>
 <script>
+$document.querySelectorAll('[state="hidden"]').css('visibility', 'hidden');
+</script>
+<script>
 $(document).ready(function(){
 
     //Check to see if the window is top if not then display button
@@ -79,7 +82,21 @@ $(document).ready(function(){
         background-size: contain;
 }
 .scrollToTop:hover{
-    text-decoration:none;
+	width:10px; 
+	height:30px;
+	padding: 15px;
+	text-align:center; 
+	background-color: #EC008C;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom: 10px;
+	right:25px;
+	display:none;
+	background: url('images/up-arrow-hover.png') no-repeat 0px 20px;
+	background-size: contain;
+	
 }
 </style>
 <!-- Main Container -->
@@ -161,8 +178,14 @@ $(document).ready(function(){
 			<p class="actu_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 			<a href="link3"><p class="actu_rm">read more...</p></a>
 		</article>
-		<article class="actus-column">
+		<article state="hidden" class="actus-column">
 			<h3>Actu 4</h3>
+			<p class="actu_date">01-02-2018</p>
+			<p class="actu_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			<a href="link1"><p class="actu_rm">read more...</p></a>
+		</article>
+		<article hidden class="actus-column">
+			<h3>Actu 5</h3>
 			<p class="actu_date">01-02-2018</p>
 			<p class="actu_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 			<a href="link1"><p class="actu_rm">read more...</p></a>
@@ -170,11 +193,50 @@ $(document).ready(function(){
 	</section>
 	
 	 <!-- Another Parallax Section -->
-  <section class="footer_sep">
+  <section class="parallax2">
     <h2 class="parallax">PARALLAX HERO</h2>
     <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
   </section>
   <!-- More Info Section -->
+<section class="moreinfo" id="moreinfo">
+	<h2>+ D'infos</h2>
+	<article class="moreinfo-column">
+		<h3>Planning des cours</h3>
+		<p></p>
+		<p class="moreinfo_text">Vous pouvez consulter ici les horaires des cours à l'année, par niveau. N'oubliez pas de vous inscrire !</p>
+		<a href="link1"><p class="moreinfo_rm">read more...</p></a> <!-- add link to page w/ google calendar-->
+	</article>
+	<article class="moreinfo-column">
+		<h3>Planning des balades</h3>
+		<p></p>
+		<p class="moreinfo_text">(Disponible uniquement pour la période du 15 juin au 15 septembre)</p>
+		<a href="link1"><p class="moreinfo_rm">read more...</p></a>
+	</article>
+	<article class="moreinfo-column">
+		<h3>Gallerie photo</h3>
+		<p></p>
+		<p class="moreinfo_text">Vous hésitez encore entre nos différentes prestations ? Vous pouvez consulter notre galerie photo en suivant le lien ci-dessous.</p>
+		<a href="link1"><p class="moreinfo_rm">read more...</p></a>
+	</article>
+	<article hidden class="moreinfo-column">
+		<h3>Mes photos</h3>
+		<p></p>
+		<p class="moreinfo_text">Lorem ipsum dollor sit amet, consecretur adispisicing elit, sed do eiusmod tempor incidiunt</p>
+		<a href="link1"><p class="moreinfo_rm">read more...</p></a>
+	</article>
+	<article hidden class="moreinfo-column">
+		<h3>Info1</h3>
+		<p></p>
+		<p class="moreinfo_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<a href="link1"><p class="moreinfo_rm">read more...</p></a>
+	</article>
+	
+</section>
+<section class="footer_sep">
+    <h2 class="parallax">PARALLAX HERO</h2>
+    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  </section>
+	
   <footer>
     <article class="footer_column" id="contact">
 		<h3>NOUS CONTACTER</h3>
