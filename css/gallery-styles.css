@@ -1,0 +1,20 @@
+/* CSS Document */
+
+.gallerymain {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 15px;
+	display: inline-block;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+}
+.gallerymain-column {
+	width: 29%;
+	text-align: justify;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #747474;
+}
