@@ -10,7 +10,10 @@
 }
 .gallerymain-column {
 	width: 29%;
+<<<<<<< HEAD
 	height:100%;
+=======
+>>>>>>> master/master
 	text-align: justify;
 	font-weight: lighter;
 	line-height: 25px;
@@ -18,6 +21,7 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #747474;
+<<<<<<< HEAD
 }
 .gallerymain-imagecontainer{
 	position: relative;
@@ -60,4 +64,6 @@
 
 .gallerymain-imagecontainer:hover .image-caption {
   opacity: 1;
+=======
+>>>>>>> master/master
 }
