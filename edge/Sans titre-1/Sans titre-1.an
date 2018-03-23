@@ -1,0 +1,68 @@
+
+{
+
+	"HTMLFileName":"Sans titre-1.html",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Niveau inférieur\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"expanded:media/videotest.mp4":"false",
+	"expanded:images/logo4_v2.png":"nil",
+	"Preloader-Default Timeline_playhead_ms":"0",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"viewStartMs":"-25",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"mediagroup_media/videotest.mp4":"videotest",
+	"TransitionIdCounter":"3",
+	"CompZoomFactor":"100",
+	"viewStartY":"0",
+	"pixelsPerMs":"0.2",
+	"symbol_Preloader":{
+		"defaultStageParentWidth":"1920px",
+		"defaultStageParentHeight":"1080px",
+		"dummyStageParentWidth":"1920px",
+		"dummyStageParentHeight":"1080px"},
+	"usedBOM":"false",
+	"nextElementColorIndex":"6",
+	"stage-Default Timeline_playhead_ms":"1427",
+	"stage-Default Timeline_mark_ms":"-1",
+	"symbol_stage":{
+		"dummyStageParentWidth":"1920px",
+		"dummyStageParentHeight":"1080px",
+		"defaultStageParentHeight":"1080px",
+		"element_${videotest}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"},
+		"element_${Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"defaultStageParentWidth":"1920px",
+		"element_${Rectangle}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"timelineColor":"0x50bd82"},
+		"element_${Rectangle2}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"invisible":"false",
+			"timelineColor":"0x00a096"},
+		"element_${logo4_v2}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"animationEnabled":"false",
+			"timelineColor":"0x00bda4"}},
+	"StageZoomFactor":"42"}
