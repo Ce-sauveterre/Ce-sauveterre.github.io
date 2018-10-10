@@ -1096,7 +1096,7 @@ form.customform input:hover, form.customform textarea:hover, form.customform sel
       float: none;
     }
     .logo {
-      max-width: 250px;
+      max-width: 250x;
       margin: 0 auto;
     }
     .nav-text {
@@ -1114,7 +1114,7 @@ form.customform input:hover, form.customform textarea:hover, form.customform sel
       display: inline-block;
       font-size: 3rem;
       margin-left: 0;
-      margin-top: 30px;
+      margin-top: 300px;
     }
     .top-nav li a, .background-white .top-nav li a {
       background: #454545 none repeat scroll 0 0;
@@ -1582,10 +1582,11 @@ nav.fixed .top-nav li a, .fixed nav .top-nav li a {
 }
 nav.fixed .logo-white, .fixed nav .logo-white {
   display:none;
+	width:80px;
 }
 nav.fixed .logo-dark, .fixed nav .logo-dark {
   display:block;
-  width: 60px;
+  width: 30px;
 }  
 nav.fixed .left-menu, nav.fixed .right-menu {
     padding: 0;
